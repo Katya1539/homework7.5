@@ -8,7 +8,7 @@ describe('Movie Booking Tests', () => {
     await page.waitForSelector('.page-nav__day');
     const days = await page.$$('.page-nav__day');
     await days[dayNumber - 1].click();
-    await page.waitForTimeout(500); 
+    await new Promise(resolve => setTimeout(resolve, 500)); 
   }
 
   async function selectSession(time) {

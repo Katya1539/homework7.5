@@ -26,7 +26,7 @@ Given('I select day {int} for the session', async function (dayNumber) {
   await page.waitForSelector('.page-nav__day');
   const days = await page.$$('.page-nav__day');
   await days[dayNumber - 1].click();
-  await page.waitForTimeout(500);
+  await new Promise(resolve => setTimeout(resolve, 500));
 });
 
 Given('I select the {string} session', async function (time) {
