@@ -3,18 +3,18 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "cucumber": "cucumber-js"
+    "test": "jest",
+    "cucumber": "cucumber-js",
+    "cucumberOnly": "cucumber-js --tags=@only"
   },
-  "keywords": [],
-  "author": "",
+  "author": "NastyaRu",
   "license": "ISC",
   "description": "",
-  "devDependencies": {
-    "cucumber": "^6.0.7",
-    "expect-puppeteer": "^11.0.0",
+  "dependencies": {
+    "chai": "^4.5.0",
+    "cucumber": "^7.0.0-rc.0",
     "jest": "^29.7.0",
     "jest-puppeteer": "^11.0.0",
-    "puppeteer": "^24.6.1"
+    "puppeteer": "^24.1.0"
   }
 }
